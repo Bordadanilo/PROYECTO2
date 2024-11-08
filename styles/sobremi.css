@@ -1,0 +1,86 @@
+/* Estilos generales para las secciones */
+section {
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Estilos para los encabezados de las secciones */
+h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #ffa500; /* Color acorde a la navegación */
+}
+
+/* Sección Sobre mí */
+#sobre-mi {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#sobre-mi p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    padding: 20px;
+}
+
+/* Sección Mis tecnologías favoritas */
+#mis-tecnologias {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para las tarjetas de tecnologías */
+.tec-card {
+    text-align: center;
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    margin: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tec-card:hover {
+    transform: scale(1.05);
+    background-color: #ffa500; /* Cambio de color en hover */
+}
+
+.tec-card img {
+    width: 100px;
+    height: auto;
+}
+
+.tec-card p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #fff; /* Color blanco para texto en fondo oscuro */
+}
+
+/* Responsivo: Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    #mis-tecnologias {
+        flex-direction: column;
+    }
+
+    .tec-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}

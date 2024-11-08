@@ -1,0 +1,52 @@
+/* Sección de películas */
+#lista-peliculas {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#lista-peliculas h2 {
+    font-size: 2.5rem;
+    color: #ffa500;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tarjeta h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.tarjeta p {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 5px;
+}
